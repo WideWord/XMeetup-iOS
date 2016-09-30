@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Eureka
 
-class EventViewController: UIViewController {
+class EventViewController: FormViewController {
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
     
 }

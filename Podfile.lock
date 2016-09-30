@@ -1,6 +1,6 @@
 PODS:
   - EasyPeasy (1.4)
-  - Eureka (1.7.0)
+  - Eureka (2.0.0-beta.1)
   - Fakery (2.0.0)
   - FormatterKit (1.8.1):
     - FormatterKit/AddressFormatter (= 1.8.1)
@@ -36,25 +36,38 @@ PODS:
   - RxCocoa (3.0.0-beta.1):
     - RxSwift (~> 3.0.0-beta.1)
   - RxSwift (3.0.0-beta.1)
+  - SwiftMoment (0.5.1)
 
 DEPENDENCIES:
   - EasyPeasy (~> 1.4)
-  - Eureka
+  - Eureka (~> 2.0.0-beta.1)
   - Fakery (~> 2.0)
   - FormatterKit
   - ObjectMapper (~> 2.0)
   - RxCocoa (~> 3.0.0-beta.1)
   - RxSwift (~> 3.0.0-beta.1)
+  - SwiftMoment (from `https://github.com/akosma/SwiftMoment.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  SwiftMoment:
+    :branch: master
+    :git: https://github.com/akosma/SwiftMoment.git
+
+CHECKOUT OPTIONS:
+  SwiftMoment:
+    :commit: 41443c541c0739e7569315d92c33840cc1ec3190
+    :git: https://github.com/akosma/SwiftMoment.git
 
 SPEC CHECKSUMS:
   EasyPeasy: c2e49ceb822edc0a5fffefd66240fff10129047d
-  Eureka: 2020d9faeef7b7e9adeb9e3d8af779e5931c1897
+  Eureka: d014adf16406745e1a78d5790ea37ed130a0a8e5
   Fakery: 97b99c23937d2e025d9135c75e2b17351ccd5031
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
   RxCocoa: 8cecf331302b8ae5381bbab1bccba4ede2eae6a8
   RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
+  SwiftMoment: 469c0734b5d4d6631a15a91f8093cf436c3cbb7c
 
-PODFILE CHECKSUM: c230cf7c2c3b64aad1abe311fa781ec2a88fea50
+PODFILE CHECKSUM: 016fb33b511cc97bdf2a485c5f6469e0a9597e5b
 
 COCOAPODS: 1.0.1

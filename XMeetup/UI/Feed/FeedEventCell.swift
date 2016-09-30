@@ -8,28 +8,21 @@
 
 import UIKit
 import FormatterKit
+import SwiftMoment
 
 
 class FeedEventCell: UITableViewCell {
 
     static let identifier = "FeedEventCell"
-    
-    private struct Constants {
-        static let dateIntervalFormatter: TTTTimeIntervalFormatter = {
-            let f = TTTTimeIntervalFormatter()
-            
-            return f
-        }
-    }
-    
+
     var event: Event? {
         didSet {
             guard let event = event else { return }
             titleLabel.text = event.title
             descrLabel.text = event.descr
-            distanceLabel.text = TTTLocationFormatter()
-                .string(fromDistance: event.distance)
-            startTimeLabel.text = Constants.dateIntervalFormatter.string(from: Date(), to: event.startDate)
+            distanceLabel.text = TTTLocationFormatter().string(fromDistance: event.distance)
+            
+            startTimeLabel.text = "началось " + moment(event.startDate).fromNow().lowercased()
         }
     }
     

@@ -24,6 +24,7 @@ class RootViewController: UIViewController {
         
         rootNavigationController.navigationBar.barTintColor = AppColors.mainBackground
         rootNavigationController.navigationBar.barStyle = .black
+        rootNavigationController.navigationBar.tintColor = .white
         
 
         

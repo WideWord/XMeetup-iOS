@@ -11,7 +11,8 @@ target 'XMeetup' do
   pod 'Fakery', '~> 2.0'
   pod 'EasyPeasy', '~> 1.4'
   pod 'FormatterKit'
-  pod 'Eureka'
+  pod 'SwiftMoment', :git => 'https://github.com/akosma/SwiftMoment.git', :branch => 'master'
+  pod 'Eureka', '~> 2.0.0-beta.1'
 
   target 'XMeetupTests' do
     inherit! :search_paths

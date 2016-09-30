@@ -24,6 +24,8 @@
 		EDB21BFC1D9C913F00A7029F /* FeedEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB21BFA1D9C913F00A7029F /* FeedEventCell.swift */; };
 		EDB21BFD1D9C913F00A7029F /* FeedEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB21BFB1D9C913F00A7029F /* FeedEventCell.xib */; };
 		EDB21C001D9C97E800A7029F /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB21BFF1D9C97E800A7029F /* EventViewController.swift */; };
+		EDEFE98E1D9E5EAD00ADCF21 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE98D1D9E5EAD00ADCF21 /* Feed.swift */; };
+		EDEFE9901D9EC78800ADCF21 /* RxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE98F1D9EC78800ADCF21 /* RxExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		EDB21BFA1D9C913F00A7029F /* FeedEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedEventCell.swift; path = UI/Feed/FeedEventCell.swift; sourceTree = "<group>"; };
 		EDB21BFB1D9C913F00A7029F /* FeedEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedEventCell.xib; path = UI/Feed/FeedEventCell.xib; sourceTree = "<group>"; };
 		EDB21BFF1D9C97E800A7029F /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = UI/Event/EventViewController.swift; sourceTree = "<group>"; };
+		EDEFE98D1D9E5EAD00ADCF21 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feed.swift; path = Data/Feed.swift; sourceTree = "<group>"; };
+		EDEFE98F1D9EC78800ADCF21 /* RxExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxExtensions.swift; path = Utils/RxExtensions.swift; sourceTree = "<group>"; };
 		F1978859E4FED1FAA1895D05 /* Pods-XMeetupTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMeetupTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMeetupTests/Pods-XMeetupTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +111,7 @@
 		ED01B4CA1D9DCE5F0032767D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EDEFE98F1D9EC78800ADCF21 /* RxExtensions.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				EDB21BEF1D9C859E00A7029F /* Models */,
 				EDB21BF41D9C896900A7029F /* Cache.swift */,
 				EDB21BF61D9C8D8B00A7029F /* DataProvider.swift */,
+				EDEFE98D1D9E5EAD00ADCF21 /* Feed.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -424,9 +430,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB21BF91D9C8EC800A7029F /* FakeData.swift in Sources */,
+				EDEFE98E1D9E5EAD00ADCF21 /* Feed.swift in Sources */,
 				EDB21C001D9C97E800A7029F /* EventViewController.swift in Sources */,
 				EDB21BF51D9C896900A7029F /* Cache.swift in Sources */,
 				ED33D4D41D9C7C9A00C21D14 /* RootViewController.swift in Sources */,
+				EDEFE9901D9EC78800ADCF21 /* RxExtensions.swift in Sources */,
 				EDB21BF71D9C8D8B00A7029F /* DataProvider.swift in Sources */,
 				EDB21BEA1D9C80E900A7029F /* Colors.swift in Sources */,
 				EDB21BF31D9C888A00A7029F /* DataEntity.swift in Sources */,

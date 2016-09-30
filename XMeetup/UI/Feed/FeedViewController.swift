@@ -26,6 +26,11 @@ class FeedViewController: UITableViewController {
         
         navigationItem.title = "События"
         
+    
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                            target: self,
+                                                            action: #selector(createEvent))
+        
         tableView.register(UINib(nibName: "FeedEventCell", bundle: nil), forCellReuseIdentifier: "event")
         
         tableView.tableFooterView = UIView()
@@ -34,28 +39,38 @@ class FeedViewController: UITableViewController {
         tableView.estimatedRowHeight = 100
         tableView.dataSource = nil
     
+        let feed = self.feed
         
         feed.asDriver()
             .drive(tableView.rx.items(cellIdentifier: "event", cellType: FeedEventCell.self))
             { $2.event = $1 }
             .addDisposableTo(disposeBag)
         
-        refreshControl = UIRefreshControl()
-        refreshControl?.rx.controlEvent(.valueChanged)
-            .subscribe(onNext: feed.resetPagination)
+        let latestDisplayedRow = tableView.rx.willDisplayCell
+            .map { _, row in row.row }
+        
+        let feedLength = feed.asDriver()
+            .map { $0.count }
+        
+        Observable.combineLatest(latestDisplayedRow, feedLength.asObservable(), resultSelector: { $0 + Constants.feedLoadingInset > $1 })
+            .filter { $0 }
+            .asVoid()
+            .subscribe(onNext: feed.needNextPage)
             .addDisposableTo(disposeBag)
         
-        feed.asDriver()
-            .map { _ in }
-            .drive(onNext: refreshControl!.endRefreshing)
+        refreshControl = UIRefreshControl()
+        refreshControl?.rx.controlEvent(.valueChanged)
+            .flatMap { feed.reloadData().materializeDisposed() }
+            .bindNext(self.refreshControl!.endRefreshing)
             .addDisposableTo(disposeBag)
     }
     
-  
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if tableView.indexPathsForVisibleRows?.last?.row ?? 0 > feed.data.count - Constants.feedLoadingInset {
-            feed.requestNextPage()
-        }
+    override func viewDidAppear(_ animated: Bool) {
+        _ = feed.reloadData().subscribe()
+    }
+    
+    @objc private func createEvent() {
+        
     }
     
 }
