@@ -1,0 +1,60 @@
+PODS:
+  - EasyPeasy (1.4)
+  - Eureka (1.7.0)
+  - Fakery (2.0.0)
+  - FormatterKit (1.8.1):
+    - FormatterKit/AddressFormatter (= 1.8.1)
+    - FormatterKit/ArrayFormatter (= 1.8.1)
+    - FormatterKit/ColorFormatter (= 1.8.1)
+    - FormatterKit/LocationFormatter (= 1.8.1)
+    - FormatterKit/NameFormatter (= 1.8.1)
+    - FormatterKit/OrdinalNumberFormatter (= 1.8.1)
+    - FormatterKit/Resources (= 1.8.1)
+    - FormatterKit/TimeIntervalFormatter (= 1.8.1)
+    - FormatterKit/UnitOfInformationFormatter (= 1.8.1)
+    - FormatterKit/URLRequestFormatter (= 1.8.1)
+  - FormatterKit/AddressFormatter (1.8.1):
+    - FormatterKit/Resources
+  - FormatterKit/ArrayFormatter (1.8.1):
+    - FormatterKit/Resources
+  - FormatterKit/ColorFormatter (1.8.1):
+    - FormatterKit/Resources
+  - FormatterKit/LocationFormatter (1.8.1):
+    - FormatterKit/Resources
+  - FormatterKit/NameFormatter (1.8.1):
+    - FormatterKit/Resources
+  - FormatterKit/OrdinalNumberFormatter (1.8.1):
+    - FormatterKit/Resources
+  - FormatterKit/Resources (1.8.1)
+  - FormatterKit/TimeIntervalFormatter (1.8.1):
+    - FormatterKit/Resources
+  - FormatterKit/UnitOfInformationFormatter (1.8.1):
+    - FormatterKit/Resources
+  - FormatterKit/URLRequestFormatter (1.8.1):
+    - FormatterKit/Resources
+  - ObjectMapper (2.0.0)
+  - RxCocoa (3.0.0-beta.1):
+    - RxSwift (~> 3.0.0-beta.1)
+  - RxSwift (3.0.0-beta.1)
+
+DEPENDENCIES:
+  - EasyPeasy (~> 1.4)
+  - Eureka
+  - Fakery (~> 2.0)
+  - FormatterKit
+  - ObjectMapper (~> 2.0)
+  - RxCocoa (~> 3.0.0-beta.1)
+  - RxSwift (~> 3.0.0-beta.1)
+
+SPEC CHECKSUMS:
+  EasyPeasy: c2e49ceb822edc0a5fffefd66240fff10129047d
+  Eureka: 2020d9faeef7b7e9adeb9e3d8af779e5931c1897
+  Fakery: 97b99c23937d2e025d9135c75e2b17351ccd5031
+  FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  RxCocoa: 8cecf331302b8ae5381bbab1bccba4ede2eae6a8
+  RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
+
+PODFILE CHECKSUM: c230cf7c2c3b64aad1abe311fa781ec2a88fea50
+
+COCOAPODS: 1.0.1
