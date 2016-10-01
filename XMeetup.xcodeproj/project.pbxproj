@@ -36,6 +36,7 @@
 		EDEFE9A31D9F46CE00ADCF21 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9A21D9F46CE00ADCF21 /* AuthViewController.swift */; };
 		EDEFE9A51D9F4A6100ADCF21 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9A41D9F4A6100ADCF21 /* NavigationController.swift */; };
 		EDEFE9A71D9FACB800ADCF21 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9A61D9FACB800ADCF21 /* SignupViewController.swift */; };
+		EDEFE9A91D9FB6C800ADCF21 /* FadeTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9A81D9FB6C800ADCF21 /* FadeTransitioning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		EDEFE9A21D9F46CE00ADCF21 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = UI/Login/AuthViewController.swift; sourceTree = "<group>"; };
 		EDEFE9A41D9F4A6100ADCF21 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = UI/Common/NavigationController.swift; sourceTree = "<group>"; };
 		EDEFE9A61D9FACB800ADCF21 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewController.swift; path = UI/Login/SignupViewController.swift; sourceTree = "<group>"; };
+		EDEFE9A81D9FB6C800ADCF21 /* FadeTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FadeTransitioning.swift; path = UI/Common/FadeTransitioning.swift; sourceTree = "<group>"; };
 		F1978859E4FED1FAA1895D05 /* Pods-XMeetupTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMeetupTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMeetupTests/Pods-XMeetupTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +210,7 @@
 				EDEFE99E1D9F2D9F00ADCF21 /* KeyboardLayoutGuide.swift */,
 				EDEFE9A01D9F389600ADCF21 /* Fonts.swift */,
 				EDEFE9A41D9F4A6100ADCF21 /* NavigationController.swift */,
+				EDEFE9A81D9FB6C800ADCF21 /* FadeTransitioning.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				EDB21BF91D9C8EC800A7029F /* FakeData.swift in Sources */,
 				EDEFE99D1D9F2D2400ADCF21 /* LoginButton.swift in Sources */,
 				EDEFE9991D9F22BA00ADCF21 /* LoginTextField.swift in Sources */,
+				EDEFE9A91D9FB6C800ADCF21 /* FadeTransitioning.swift in Sources */,
 				EDEFE98E1D9E5EAD00ADCF21 /* Feed.swift in Sources */,
 				EDB21C001D9C97E800A7029F /* EventViewController.swift in Sources */,
 				EDEFE99B1D9F22FD00ADCF21 /* SeparatorView.swift in Sources */,

@@ -93,6 +93,7 @@ class LoginViewController: UIViewController {
         signupButton.setTitle("Создать аккаунт", for: .normal)
         signupButton <- [Top(10).to(loginButton), CenterX(), Height(30)]
         signupButton.rx.tap.bindNext { [weak self] in
+            RootViewController.instance.useTransitioning(FadeTransitioning())
             self?.navigationController?.replaceCurrentController(with: SignupViewController(), animated: true)
         }.addDisposableTo(disposeBag)
         
@@ -104,6 +105,7 @@ class LoginViewController: UIViewController {
         remindPassword.setTitle("Забыли пароль?", for: .normal)
         remindPassword <- [Top().to(signupButton), CenterX(), Bottom(), Height(40), Bottom()]
         remindPassword.rx.tap.bindNext { [weak self] in
+            RootViewController.instance.useTransitioning(FadeTransitioning())
             self?.navigationController?.replaceCurrentController(with: SignupViewController(), animated: true)
             }.addDisposableTo(disposeBag)
         

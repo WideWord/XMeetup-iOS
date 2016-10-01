@@ -50,10 +50,12 @@ class AuthViewController: UIViewController {
         
         
         _ = loginButton.rx.tap.bindNext { [weak self] in
+            RootViewController.instance.useTransitioning(FadeTransitioning())
             self?.navigationController?.replaceCurrentController(with: LoginViewController(), animated: true)
         }
         
         _ = regButton.rx.tap.bindNext { [weak self] in
+            RootViewController.instance.useTransitioning(FadeTransitioning())
             self?.navigationController?.replaceCurrentController(with: SignupViewController(), animated: true)
         }
         

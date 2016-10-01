@@ -87,6 +87,7 @@ class SignupViewController: UIViewController {
         alreadyHaveAccount.setTitle("Уже регистрировались?", for: .normal)
         alreadyHaveAccount <- [Top().to(loginButton), CenterX(), Bottom(), Height(40)]
         alreadyHaveAccount.rx.tap.bindNext { [weak self] in
+            RootViewController.instance.useTransitioning(FadeTransitioning())
             self?.navigationController?.replaceCurrentController(with: LoginViewController(), animated: true)
         }.addDisposableTo(disposeBag)
         
