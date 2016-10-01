@@ -26,6 +26,16 @@
 		EDB21C001D9C97E800A7029F /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB21BFF1D9C97E800A7029F /* EventViewController.swift */; };
 		EDEFE98E1D9E5EAD00ADCF21 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE98D1D9E5EAD00ADCF21 /* Feed.swift */; };
 		EDEFE9901D9EC78800ADCF21 /* RxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE98F1D9EC78800ADCF21 /* RxExtensions.swift */; };
+		EDEFE9921D9ED32000ADCF21 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9911D9ED32000ADCF21 /* LocationManager.swift */; };
+		EDEFE9971D9F220D00ADCF21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9961D9F220D00ADCF21 /* LoginViewController.swift */; };
+		EDEFE9991D9F22BA00ADCF21 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9981D9F22BA00ADCF21 /* LoginTextField.swift */; };
+		EDEFE99B1D9F22FD00ADCF21 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE99A1D9F22FD00ADCF21 /* SeparatorView.swift */; };
+		EDEFE99D1D9F2D2400ADCF21 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE99C1D9F2D2400ADCF21 /* LoginButton.swift */; };
+		EDEFE99F1D9F2D9F00ADCF21 /* KeyboardLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE99E1D9F2D9F00ADCF21 /* KeyboardLayoutGuide.swift */; };
+		EDEFE9A11D9F389600ADCF21 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9A01D9F389600ADCF21 /* Fonts.swift */; };
+		EDEFE9A31D9F46CE00ADCF21 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9A21D9F46CE00ADCF21 /* AuthViewController.swift */; };
+		EDEFE9A51D9F4A6100ADCF21 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9A41D9F4A6100ADCF21 /* NavigationController.swift */; };
+		EDEFE9A71D9FACB800ADCF21 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFE9A61D9FACB800ADCF21 /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +75,16 @@
 		EDB21BFF1D9C97E800A7029F /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = UI/Event/EventViewController.swift; sourceTree = "<group>"; };
 		EDEFE98D1D9E5EAD00ADCF21 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feed.swift; path = Data/Feed.swift; sourceTree = "<group>"; };
 		EDEFE98F1D9EC78800ADCF21 /* RxExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxExtensions.swift; path = Utils/RxExtensions.swift; sourceTree = "<group>"; };
+		EDEFE9911D9ED32000ADCF21 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Utils/LocationManager.swift; sourceTree = "<group>"; };
+		EDEFE9961D9F220D00ADCF21 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = UI/Login/LoginViewController.swift; sourceTree = "<group>"; };
+		EDEFE9981D9F22BA00ADCF21 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginTextField.swift; path = UI/Login/LoginTextField.swift; sourceTree = "<group>"; };
+		EDEFE99A1D9F22FD00ADCF21 /* SeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeparatorView.swift; path = UI/Common/SeparatorView.swift; sourceTree = "<group>"; };
+		EDEFE99C1D9F2D2400ADCF21 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginButton.swift; path = UI/Login/LoginButton.swift; sourceTree = "<group>"; };
+		EDEFE99E1D9F2D9F00ADCF21 /* KeyboardLayoutGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutGuide.swift; path = UI/Common/KeyboardLayoutGuide.swift; sourceTree = "<group>"; };
+		EDEFE9A01D9F389600ADCF21 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fonts.swift; path = UI/Common/Fonts.swift; sourceTree = "<group>"; };
+		EDEFE9A21D9F46CE00ADCF21 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = UI/Login/AuthViewController.swift; sourceTree = "<group>"; };
+		EDEFE9A41D9F4A6100ADCF21 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = UI/Common/NavigationController.swift; sourceTree = "<group>"; };
+		EDEFE9A61D9FACB800ADCF21 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewController.swift; path = UI/Login/SignupViewController.swift; sourceTree = "<group>"; };
 		F1978859E4FED1FAA1895D05 /* Pods-XMeetupTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMeetupTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMeetupTests/Pods-XMeetupTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				EDEFE98F1D9EC78800ADCF21 /* RxExtensions.swift */,
+				EDEFE9911D9ED32000ADCF21 /* LocationManager.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -162,6 +183,7 @@
 		ED33D4D11D9C7C6100C21D14 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				EDEFE9951D9F21EB00ADCF21 /* Login */,
 				EDB21BFE1D9C97D000A7029F /* Event */,
 				EDB21BEB1D9C84BC00A7029F /* Feed */,
 				EDB21BE81D9C80BE00A7029F /* Common */,
@@ -182,6 +204,10 @@
 			isa = PBXGroup;
 			children = (
 				EDB21BE91D9C80E900A7029F /* Colors.swift */,
+				EDEFE99A1D9F22FD00ADCF21 /* SeparatorView.swift */,
+				EDEFE99E1D9F2D9F00ADCF21 /* KeyboardLayoutGuide.swift */,
+				EDEFE9A01D9F389600ADCF21 /* Fonts.swift */,
+				EDEFE9A41D9F4A6100ADCF21 /* NavigationController.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -223,6 +249,18 @@
 				EDB21BFF1D9C97E800A7029F /* EventViewController.swift */,
 			);
 			name = Event;
+			sourceTree = "<group>";
+		};
+		EDEFE9951D9F21EB00ADCF21 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EDEFE9961D9F220D00ADCF21 /* LoginViewController.swift */,
+				EDEFE9981D9F22BA00ADCF21 /* LoginTextField.swift */,
+				EDEFE99C1D9F2D2400ADCF21 /* LoginButton.swift */,
+				EDEFE9A21D9F46CE00ADCF21 /* AuthViewController.swift */,
+				EDEFE9A61D9FACB800ADCF21 /* SignupViewController.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,17 +468,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB21BF91D9C8EC800A7029F /* FakeData.swift in Sources */,
+				EDEFE99D1D9F2D2400ADCF21 /* LoginButton.swift in Sources */,
+				EDEFE9991D9F22BA00ADCF21 /* LoginTextField.swift in Sources */,
 				EDEFE98E1D9E5EAD00ADCF21 /* Feed.swift in Sources */,
 				EDB21C001D9C97E800A7029F /* EventViewController.swift in Sources */,
+				EDEFE99B1D9F22FD00ADCF21 /* SeparatorView.swift in Sources */,
+				EDEFE9971D9F220D00ADCF21 /* LoginViewController.swift in Sources */,
 				EDB21BF51D9C896900A7029F /* Cache.swift in Sources */,
 				ED33D4D41D9C7C9A00C21D14 /* RootViewController.swift in Sources */,
+				EDEFE99F1D9F2D9F00ADCF21 /* KeyboardLayoutGuide.swift in Sources */,
+				EDEFE9A31D9F46CE00ADCF21 /* AuthViewController.swift in Sources */,
+				EDEFE9A51D9F4A6100ADCF21 /* NavigationController.swift in Sources */,
 				EDEFE9901D9EC78800ADCF21 /* RxExtensions.swift in Sources */,
 				EDB21BF71D9C8D8B00A7029F /* DataProvider.swift in Sources */,
 				EDB21BEA1D9C80E900A7029F /* Colors.swift in Sources */,
 				EDB21BF31D9C888A00A7029F /* DataEntity.swift in Sources */,
 				EDB21BFC1D9C913F00A7029F /* FeedEventCell.swift in Sources */,
+				EDEFE9921D9ED32000ADCF21 /* LocationManager.swift in Sources */,
+				EDEFE9A11D9F389600ADCF21 /* Fonts.swift in Sources */,
 				EDB21BED1D9C84F700A7029F /* FeedViewController.swift in Sources */,
 				ED33D4B21D9C7C2600C21D14 /* AppDelegate.swift in Sources */,
+				EDEFE9A71D9FACB800ADCF21 /* SignupViewController.swift in Sources */,
 				EDB21BF11D9C85C500A7029F /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

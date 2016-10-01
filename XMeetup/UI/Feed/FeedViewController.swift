@@ -70,7 +70,7 @@ class FeedViewController: UITableViewController {
     }
     
     @objc private func createEvent() {
-        
+        navigationController?.pushViewController(AuthViewController(), animated: true)
     }
     
 }

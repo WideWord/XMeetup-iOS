@@ -22,6 +22,27 @@ extension UIColor {
                   alpha: 1)
     }
     
+    func colorWithBrightnessFactor(_ factor: CGFloat) -> UIColor {
+        var hue : CGFloat = 0
+        var saturation : CGFloat = 0
+        var brightness : CGFloat = 0
+        var alpha : CGFloat = 0
+        
+        if getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) {
+            return UIColor(hue: hue, saturation: saturation, brightness: brightness * factor, alpha: alpha)
+        } else {
+            return self
+        }
+    }
+    
+    func lighterColor(_ percent : Double) -> UIColor {
+        return colorWithBrightnessFactor(CGFloat(1 + percent))
+    }
+    
+    func darkerColor(_ percent : Double) -> UIColor {
+        return colorWithBrightnessFactor(CGFloat(1 - percent))
+    }
+    
 }
 
 struct AppColors {
