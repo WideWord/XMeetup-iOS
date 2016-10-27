@@ -42,6 +42,8 @@ class LoginButton: UIButton {
     
     let style: Style
     
+    private let activityIndicator = UIActivityIndicatorView()
+    
     init(style: Style) {
         self.style = style
         super.init(frame: CGRect.null)
@@ -61,31 +63,57 @@ class LoginButton: UIButton {
         titleEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         
         titleLabel?.font = AppFonts.thin
+        
+        addSubview(activityIndicator)
+        activityIndicator.isHidden = true
+        activityIndicator <- Center()
     }
     
     override var isHighlighted: Bool {
         didSet {
-            if isEnabled {
-                if isHighlighted {
-                    backgroundColor = style.backgroundHighlightedColor
-                } else {
-                    UIView.animate(withDuration: 0.4) {
-                        self.backgroundColor = self.style.backgroundNormalColor
-                    }
-                }
-            }
+            updateView()
         }
     }
     
     override var isEnabled: Bool {
         didSet {
-            if isEnabled {
-                backgroundColor = style.backgroundNormalColor
-                layer.borderColor = style.borderNormalColor.cgColor
+            updateView()
+        }
+    }
+    
+    var isActivityIndicatorVisible: Bool = false {
+        didSet {
+            updateView()
+            if isActivityIndicatorVisible {
+                activityIndicator.startAnimating()
+                setTitleColor(.clear, for: .normal)
+                setTitleColor(.clear, for: .disabled)
+                setTitleColor(.clear, for: .highlighted)
             } else {
-                layer.borderColor = style.borderDisabledColor.cgColor
-                self.backgroundColor = style.backgroundDisabledColor
+                activityIndicator.stopAnimating()
+                setTitleColor(.white, for: .normal)
+                setTitleColor(UIColor.white.darkerColor(0.4), for: .disabled)
+                setTitleColor(style.titleHighlightedColor, for: .highlighted)
             }
+        }
+    }
+    
+    private func updateView() {
+        if isActivityIndicatorVisible {
+            layer.borderColor = style.borderNormalColor.cgColor
+            backgroundColor = style.backgroundHighlightedColor
+        } else if isEnabled {
+            layer.borderColor = style.borderNormalColor.cgColor
+            if isHighlighted {
+                backgroundColor = style.backgroundHighlightedColor
+            } else {
+                UIView.animate(withDuration: 0.4) {
+                    self.backgroundColor = self.style.backgroundNormalColor
+                }
+            }
+        } else {
+            layer.borderColor = style.borderDisabledColor.cgColor
+            self.backgroundColor = style.backgroundDisabledColor
         }
     }
     

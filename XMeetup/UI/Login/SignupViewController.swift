@@ -91,11 +91,18 @@ class SignupViewController: UIViewController {
             self?.navigationController?.replaceCurrentController(with: LoginViewController(), animated: true)
         }.addDisposableTo(disposeBag)
         
+        
+        
         let tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.rx.event.asVoid().bindNext { [weak self] in
             self?.view.endEditing(true)
         }.addDisposableTo(disposeBag)
         view.addGestureRecognizer(tapRecognizer)
+        
+        
+        _ = loginButton.rx.tap.bindNext {
+            loginButton.isActivityIndicatorVisible = true
+        }
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
